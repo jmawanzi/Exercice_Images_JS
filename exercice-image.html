@@ -5,17 +5,19 @@ function affichage(){
 	alert("Tout es OK !");
 }
 function cacher(){
-	document.getElementById('DuTexte').style.display="None";
+	document.getElementById('Image 1').style.display="None";
 }
 function presenter(){
-	document.getElementById('DuTexte').style.display="Block";
+	document.getElementById('Image 1').style.display="Block";
 }
 
 function controler(){
-	if(document.getElementById('Control').checked){
-			alert("Bouton option coché");
-		}
-	else{alert("Bouton option NON coché");}		
+	if(document.getElementById('Image 1').checked){
+	document.getElementById('first').style.display="Block";
+	}
+	else{
+	document.getElementById('first').style.display="None"
+	}
 }
 
 </script>
@@ -28,8 +30,8 @@ function controler(){
 	<p><input type="checkbox" id= "Image 2" name="Image 2" checked/>Image 2</p>
 	<p><input type="checkbox" id= "Image 3" name="Image 3" checked/>Image 3</p>
 <button onclick="affichage()">Afficher</button>
+	<p><img src="Image1.jpg" width="350px" height="280px"  /></p>
 <hr/>
-	<p><img src="Image1.jpg" width="350px" height="280px" /></p>
 	<p><img src="Image2.jpg" width="350px" height="280px" /></p>
 	<p><img src="Image3.jpg" width="350px" height="280px" /></p>
 <p id="DuTexte">Ma phrase de texte</p>
