@@ -13,9 +13,31 @@
         }
 
     </script>
+    <script>
+    function afficher(){
+    if(document.getElementById('coche2').checked){
+        document.getElementById("second").style.display="Block";
+    }
+    else{
+        document.getElementById("second").style.display="None";
+    }
+        }
+
+    </script>
+    <script>
+    function afficher(){
+    if(document.getElementById('coche3').checked){
+        document.getElementById("third").style.display="Block";
+    }
+    else{
+        document.getElementById("third").style.display="None";
+    }
+        }
+
+    </script>
     </head>
     <body>
-        <h1>Image(s) agrave; afficher ?</h1>
+        <h1>Image(s) &agrave; afficher ?</h1>
         <p><input type="checkbox" id="coche1" >Image 1</p>
         <p><input type="checkbox" id="coche2" >Image 2</p>
         <p><input type="checkbox" id="coche3" >Image 3</p>
